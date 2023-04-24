@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cart | Schoole Masks </title>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/animate.css">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="./newheader/newheader.css">
+
+
+
+          <!-- Animation -->
+      <link rel="stylesheet" type="text/css" href="aos.js">
+      <link rel="stylesheet" type="text/css" href="aos.css">
+          <!-- CDN -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <a id="button"></a>
+
+    <!--TOP BAR-->
+    <section class="bg_top">
+     <div class="container-fluid">
+         <div class="row bar_size">
+             
+             <div class="col-md-3 col-sm-3  text-center">
+                  <a href="#"><i class="fas fa-user" style="font-size:20px;color: #fff;"></i></a>
+             </div>
+   
+             <div class="col-md-6 col-sm-6  text-center padd">
+                 <span class="top_text">Pre-order! mask packs expected to arrive by july 31, 2020. free u.s. shipping $99+  </span>
+             </div>
+   
+             <div class="col-md-3 col-sm-3 text-center ">
+                <div class="search-box">
+                    <input class="search-txt" type="search" name="" placeholder="search..">
+                    <a class="search-btn" href="#"> <i class="fas fa-search"></i></a>                      
+                </div>
+             </div>
+   
+         </div>
+     </div>
+   </section> 
+   
+      
+     <!--MENU-->
+     <header>
+     <nav>
+         <ul class="menu">
+             <li class="logo"><a href="index.html"><img src="images/logo.png"></a></li>
+             <li class="item"><a href="index.html" class="red">Home</a></li>
+             <li class="item"><a href="kidsmask.html" class="orange">KIDS MASK PACKS</a></li>
+             <li class="item"><a href="teacher_adultmask.html" class="blue">ADULT/TEEN MASK PACK</a></li>
+             <li class="item"><a href="classpacks.html" class="green">CLASSPACKS/BULK BUY</a></li>
+             <li class="item"><a href="shop_all.html" class="red">SHOP ALL</a></li>
+             <li class="item dropdown"><a href="/faq.html" class="orange">FAQ </a>
+              <ul class="dropdown-content">
+                  <li><a href="#">HOW TO WEAR</a></li>
+                  <li><a href="#">HOW TO WASH</a></li>
+                  <li><a href="#">GIVING BACK</a></li>
+              </ul>
+              </li>
+              <li class="item"><a href="sizechart.html" class="blue">SIZE CHART</a></li>
+             <li class="item button"><a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a></li>
+             <li class="toggle"><span class="bars"></span></li>
+         </ul>
+     </nav>
+   </header>
+
+   <style type="text/css">
+            .font-size-i{
+        font-size: 70px;
+        }
+        .marg-top-i{
+        margin-top: 12px;
+        }
+        .mar-btu-top-bot{
+        margin-top: 0px;
+        margin-bottom: 30px;
+        }
+        .product-des{
+        font-family: 'Quicksand', sans-serif;
+        font-size: 16px;
+        }
+        ul.product-des{
+        padding-left: 33px;
+        line-height: 1.6;
+        }
+        .sub, .add, .box{padding: 4px 12px;}
+        .pricr-pro{
+        margin-top:-10px;
+        margin-bottom: 18px;
+        }
+        .add-to{
+            background-color: #7d972f;
+            margin-right: 32px;
+            box-shadow: 5px 10px 20px 0px #86a13350;
+            margin-bottom: 13px;
+            color: #fff;
+            font-size: 20px;
+            border-radius: 50px;
+            font-weight: bold;
+            padding: 9px 35px; 
+        } 
+        .add-to:hover{
+            background-color: #728830;
+            transition: .5s;
+        }
+
+        .cart-btu{
+        margin-top: 33px;
+        margin-bottom: 27px;
+        }
+        .img-wid{
+            width: 20%;
+        }
+        .por-mar{
+        margin-bottom: 20px;
+        }
+        .por-lef{
+        margin: 6px 10px;
+        }
+
+        /*----cart----*/
+        .pro_title{
+        padding:6px 10px; 
+        }
+        .had-pro-col{
+        background-color: #EF5C67;
+        color: white;
+        margin-bottom: 20px
+        }
+        .cart-box{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        }
+        .h3-si{
+        margin-top: 9px;
+        }
+        .Your-cart{
+        margin-left: 20px;
+        }
+        .text-end{
+        text-align: end;
+        }
+        .mar-zr{
+        margin-right: 0px; 
+        }
+        h3.col-green.pricr-pro {
+            margin-bottom: 5px;
+            color: rgba(0, 0, 0, 0.795) !important;
+            font-family: 'Quicksand', sans-serif; 
+        }
+        .col-total{
+            color: black;
+        }
+        .col-pink{
+            color: #EF5C67;
+        }
+        .cart-p-mar{
+        margin-bottom: -5px !important;
+        }
+
+        @media (max-width: 991px){
+        .had-pro-col{
+            display: none;
+        }
+        .crt-width{
+          width:75%
+        }
+        .h4-cen{
+            padding: 5px;
+        }
+        .h3-si{
+            margin-bottom: 9px;
+        }
+        .h4-cen, .h3-si{
+            text-align: center;
+        }
+
+        }
+
+        /*-----End cart----------*/
+
+        @media (max-width: 550px){
+        .por-lef{
+            margin: 6px 6px;
+        }
+        .crt-width{
+          width:100%
+        }
+        }
+        @media (max-width: 450px){
+        .add-to{
+            display: flow-root;
+            text-align: center;
+            margin-left: 32px;
+        }
+        .cart-btu{
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+        }
+  </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12"> 
+  
+            <h3 class="Your-cart">Your Cart</h3>
+            <div class=" had-pro-col">
+              <div id="product">
+                <div class="row">
+                  <div class="col-md-6 col-sm-4 col-xl-4">
+                    <div class="pro_title" data-wow-delay="0.1s">
+                      <h4>Product</h4>                        
+                    </div>
+                  </div>
+  
+                  <div class="col-md-2 col-sm-2 col-xl-2">
+                    <div class="pro_title" data-wow-delay="0.1s">
+                      <h4>Price</h4>                        
+                    </div>
+                  </div>
+  
+                  <div class="col-md-2 col-sm-2 col-xl-2">
+                    <div class="pro_title" data-wow-delay="0.1s">
+                      <h4>Quantity</h4>                        
+                    </div>
+                  </div>
+  
+                  <div class="col-md-2 col-sm-2 col-xl-2">
+                    <div class="pro_title" data-wow-delay="0.1s">
+                      <h4>Total</h4>                        
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="container crt-width">
+            <div class="cart-box">
+              <div class="row ">
+                <div class="col">
+                  <div class="col-md-6">
+                      <div class="col-md-4"><img src="images/adult_pro1.png"></div>
+                      <div class="col-md-8">
+                       <h4 class="h4-cen">Crayola™ Kids ReuCool Colors, Back to School Supplies</h4>
+                      </div>
+                  </div>
+                </div>
+                 
+                <div class="col-md-2">
+                   <h3 class="col-green pricr-pro h3-si">₹3,131.09 INR</h3>
+                </div>
+  
+                <div class="col-md-2">
+                  <div id="field1" class="h3-si"> 
+                    <button type="button" id="sub" class="sub">-</button>
+                    <input type="number" id="1" value="1" min="1" max="3" class="box" />
+                    <button type="button" id="add" class="add">+</button>
+                  </div>
+                </div>
+  
+                <div class="col-md-2">
+                  <h3 class=" col-total pricr-pro h3-si">₹3,131.09 INR</h3>
+                </div>
+              </div>
+            </div>
+  
+            <hr>
+  
+            <div class="cart-box">
+              <div class="row">
+                <div class="col">
+                  <div class="col-md-6">
+                      <div class="col-md-4"><img src="images/adult_pro2.png"></div>
+                      <div class="col-md-8">
+                       <h4 class="h4-cen">Crayola™ Kids ReuCool Colors, Back to School Supplies</h4>
+                      </div>
+                  </div>
+                </div>
+                 
+                <div class="col-md-2">
+                   <h3 class="col-green pricr-pro h3-si">₹3,131.09 INR</h3>
+                </div>
+  
+                <div class="col-md-2">
+                  <div id="field1" class="h3-si"> 
+                    <button type="button" id="sub" class="sub">-</button>
+                    <input type="number" id="1" value="1" min="1" max="3" class="box" />
+                    <button type="button" id="add" class="add">+</button>
+                  </div>
+                </div>
+  
+                <div class="col-md-2">
+                  <h3 class="col-total pricr-pro h3-si">₹3,131.09 INR</h3>
+                </div>
+              </div>
+            </div>
+  
+            <hr>
+  
+            <div class="col-md-12 Adjustable text-end">
+              <h3 class="col-pink pricr-pro pri-bot-zor">₹3,131.09 INR</h3>
+              <p class="cart-p-mar">Shipping $ taxes calculated at chekout</p>
+              <div class="cart-btu">
+                <a href="#" class="add-to mar-zr">CHACK OUT</a>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+    </div>
+  
+   <!-- NEWSLETER   -->
+
+   <div class="subscribe-form subscribe-blue">
+    <div class=container>
+      <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-12 sub-form text-center"> 
+            <div class="newsletter_sec wow bounceIn" data-wow-duration="2s">
+              <h2> SUBSCRIBE TO <span class="txt-rotate"data-period="2000"data-rotate='[ "NEWSLETTER.", "NEW PRODUCT.", " NEW UPDATE "]'></span></h2>
+              <p>Join to get special offers, free giveaways, and once-in-a-lifetime deals.</p>
+              <form>
+                  <input type="email" id="email" placeholder="Your email address"> 
+                  <a href="#" class="btu-sub"> JOIN</a>
+              </form>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!--FOOTER SECTION -->
+    <footer>
+        <div class="container">
+           <div class="row wow fadeIn" data-wow-duration="2s">
+            <div class="footer_site wow ">
+              <img src="images/footer-site.png">
+            </div>
+            <div class="footer_logo wow swing">
+              <!--FOOTER LOGO-->
+              <a href="#"><img src="images/footer_logo.png"> </a>
+            </div>
+      
+            <div class="footer_links">
+              <ul>
+                  <li><a href="#">HOME</a> </li>
+                  <li><a href="#">KIDS MASK PACKS</a> </li>
+                  <li><a href="#">ADULT/TEEN MASK PACKS </a> </li>
+                  <li><a href="#">CLASSPACKS/BULK BUY  </a> </li>
+                  <li><a href="#">SHOP ALL</a> </li>
+                  <li><a href="#">FAQ</a> </li>
+                  <li><a href="#">SIZE CHART </a></li>
+                </ul>
+            </div>
+            <div class="footer_social_icon">
+              <ul>
+                  <li><a href="#"><i class="wow zoomInUp fab fa-facebook" data-wow-duration="2s"></i></a> </li>
+                  <li><a href="#"><i class="wow zoomInUp fab fa-twitter" data-wow-duration="2s"></i></a> </li>
+                  <li><a href="#"><i class="wow zoomInUp fab fa-instagram" data-wow-duration="2s"></i></a> </li>
+                  <li><a href="#"><i class="wow zoomInUp fab fa-pinterest" data-wow-duration="2s"></i></a> </li>
+                  <li><a href="#"><i class="wow zoomInUp fab fa-google-plus" data-wow-duration="2s"></i></a> </li>
+                  <li><a href="#"><i class="wow zoomInUp fab fa-tumblr" data-wow-duration="2s"></i></a> </li>
+              </ul>   
+            </div>
+            <div class="footer_credit">
+              <ul>
+                  <li><p>© SCHOOLMASKPACK™ 2020 </p> </li>
+                  <li><a href="#"> SEARCH</a> </li>
+                  <li><a href="#">FAQ </a> </li>
+                  <li><a href="#"> HOW TO WEAR  </a> </li>
+                  <li><a href="#">ABOUT US</a> </li>
+                  <li><a href="#"> CONTACT US </a> </li>
+                  <li><a href="#">PRIVACY & POLICY  </a> </li>
+                  <li><a href="#"> POWERED BY SHOPIFY</a> </li>
+              </ul>   
+            </div>       
+          </div>
+        </div> 
+      </footer>
+  
+    
+
+</body>
+
+<script type="text/javascript">
+    $('.add').click(function () {
+      if ($(this).prev().val() < 1000000) {
+        $(this).prev().val(+$(this).prev().val() + 1);
+      }
+  });
+  $('.sub').click(function () {
+      if ($(this).next().val() > 1) {
+        if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
+      }
+  });
+
+//   Newsletter Animation
+    var TxtRotate = function(el, toRotate, period) {
+      this.toRotate = toRotate;
+      this.el = el;
+      this.loopNum = 0;
+      this.period = parseInt(period, 10) || 2000;
+      this.txt = '';
+      this.tick();
+      this.isDeleting = false;
+    };
+  
+    TxtRotate.prototype.tick = function() {
+      var i = this.loopNum % this.toRotate.length;
+      var fullTxt = this.toRotate[i];
+  
+      if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+      } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+      }
+  
+      this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+  
+      var that = this;
+      var delta = 300 - Math.random() * 100;
+  
+      if (this.isDeleting) { delta /= 2; }
+  
+      if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+      } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+      }
+  
+      setTimeout(function() {
+        that.tick();
+      }, delta);
+    };
+  
+    window.onload = function() {
+      var elements = document.getElementsByClassName('txt-rotate');
+      for (var i=0; i<elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-rotate');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+          new TxtRotate(elements[i], JSON.parse(toRotate), period);
+        }
+      }
+      // INJECT CSS
+      var css = document.createElement("style");
+      css.type = "text/css";
+      css.innerHTML = ".txt-rotate > .wrap { border-right: 0px solid #fff }";
+      document.body.appendChild(css);
+    };
+  </script>
+
+
+</html>
